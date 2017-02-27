@@ -24885,7 +24885,8 @@
 	var React = __webpack_require__(1);
 
 	var _require = __webpack_require__(159),
-	    Link = _require.Link;
+	    Link = _require.Link,
+	    IndexLink = _require.IndexLink;
 
 	// Top naavigation bar
 
@@ -24903,18 +24904,18 @@
 	        ' Nav Component'
 	      ),
 	      React.createElement(
-	        Link,
-	        { to: '/' },
+	        IndexLink,
+	        { to: '/', activeCassName: 'active', activeStyle: { fontWeight: 'bold' } },
 	        'Get Weather'
 	      ),
 	      React.createElement(
 	        Link,
-	        { to: '/about' },
+	        { to: '/about', activeCassName: 'active', activeStyle: { fontWeight: 'bold' } },
 	        'About'
 	      ),
 	      React.createElement(
 	        Link,
-	        { to: '/examples' },
+	        { to: '/examples', activeCassName: 'active', activeStyle: { fontWeight: 'bold' } },
 	        'Examples'
 	      )
 	    );

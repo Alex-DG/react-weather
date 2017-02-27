@@ -1,5 +1,5 @@
 var React = require('react');
-var {Link} = require('react-router');
+var {Link, IndexLink} = require('react-router');
 
 // Top naavigation bar
 var Nav = React.createClass({
@@ -7,9 +7,9 @@ var Nav = React.createClass({
     return (
       <div>
         <h2> Nav Component</h2>
-        <Link to="/">Get Weather</Link>
-        <Link to="/about">About</Link>
-        <Link to="/examples">Examples</Link>
+        <IndexLink to="/" activeCassName="active" activeStyle={{fontWeight: 'bold'}}>Get Weather</IndexLink>
+        <Link to="/about" activeCassName="active" activeStyle={{fontWeight: 'bold'}}>About</Link>
+        <Link to="/examples" activeCassName="active" activeStyle={{fontWeight: 'bold'}}>Examples</Link>
       </div>
     );
   }
